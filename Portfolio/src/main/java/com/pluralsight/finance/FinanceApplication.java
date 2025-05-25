@@ -7,6 +7,6 @@ public class FinanceApplication {
         Valuable account2 = new BankAccount("Gary", "456", 1500);
 
         account1.deposit(100);
-        account2.deposit(100);
+
     }
 }

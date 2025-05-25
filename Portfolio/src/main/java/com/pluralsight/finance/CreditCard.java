@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public class CreditCard implements Valuable{
+public abstract class CreditCard implements Valuable{
 
     private String name;
     private String accountNumber;
@@ -14,12 +14,13 @@ public class CreditCard implements Valuable{
     }
 
     public void charge(double amount) {
-
+        balance -= amount;
     }
 
     public void pay(double amount) {
-
+        balance += amount;
     }
+
 
     public double getValue() {
         return balance;

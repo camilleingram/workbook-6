@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public class House implements Valuable{
+public abstract class House extends FixedAsset  {
     private int yearBuilt;
     private int squareFeet;
     private int bedrooms;
@@ -11,6 +11,7 @@ public class House implements Valuable{
         this.bedrooms = bedrooms;
     }
 
+    @Override
     public double getValue() {
         return 0;
     }

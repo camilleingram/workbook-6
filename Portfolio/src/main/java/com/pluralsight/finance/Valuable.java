@@ -1,6 +1,8 @@
 package com.pluralsight.finance;
 
-public interface Valuable {
+public interface Valuable extends Comparable<Valuable> {
 
     double getValue();
+
+
 }
